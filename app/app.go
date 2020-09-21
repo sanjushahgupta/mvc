@@ -2,7 +2,7 @@ package app
 
 import (
 	"net/http"	
-	"github.com/sanju-png/web/userc.go"
+	"github.com/sanjushahgupta/mvc/domain/user.go"
 )
 
 func startapp(){
