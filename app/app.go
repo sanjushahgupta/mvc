@@ -1,14 +1,14 @@
 package app
 
 import (
-	"net/http"	
-	"github.com/sanjushahgupta/mvc/domain/user.go"
+	"net/http"
 )
 
-func startapp(){
-http.HandleFunc("/users",controllers.GetUser)
+func StartApp() {
+	http.HandleFunc("/users", controllers.getuser)
 
-if err!=http.ListenAndServe(":8080", handler: nil); err != nil{
-	panic(err)
-}
+	if err := http.ListenAndServe(":8080", nil); err != nil {
+		panic(err)
+	}
+
 }
